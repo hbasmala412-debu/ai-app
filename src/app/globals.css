@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+:root {
+  --bg-main: #ffffff;
+  --mesh-gradient: 
+    radial-gradient(circle at 10% 20%, #dbeafe 0%, transparent 40%),
+    radial-gradient(circle at 90% 10%, #f5d0fe 0%, transparent 40%),
+    radial-gradient(circle at 50% 100%, #e0f2fe 0%, transparent 50%);
+    
+  --text-primary: #0f172a;
+  --primary: #6366f1;
+  --primary-hover: #4f46e5;
+}
+
+html.dark {
+  --bg-main: #020617;
+  --mesh-gradient: 
+    radial-gradient(circle at 10% 20%, #1e1b4b 0%, transparent 40%),
+    radial-gradient(circle at 90% 10%, #3b0764 0%, transparent 40%),
+    radial-gradient(circle at 50% 100%, #020617 0%, transparent 50%);
+
+  --text-primary: #f8fafc;
+}
+
+body {
+  direction: rtl;
+  background-color: var(--bg-main);
+  background-image: var(--mesh-gradient);
+  background-attachment: fixed;
+  color: var(--text-primary);
+  min-height: 100vh;
+  margin: 0;
+  transition: all 0.4s ease;
+}
+
+/* ستايل زرار التبديل (Switch) زي الصورة الأخيرة */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+}
+
+.switch input { opacity: 0; width: 0; height: 0; }
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #fbbf24;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "☀️";
+  display: flex; align-items: center; justify-content: center;
+  height: 22px; width: 22px;
+  left: 4px; bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+input:checked + .slider { background-color: #4f46e5; }
+input:checked + .slider:before {
+  transform: translateX(30px);
+  content: "🌙";
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease forwards;
+}
