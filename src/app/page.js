@@ -80,7 +80,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-linear-to-tr from-indigo-500/20 via-purple-500/10 to-blue-500/20 blur-2xl opacity-70"></div>
 
           <img
-            src="/images/ai27.jpg"
+            src="/images/ai99.png"
             alt="AI Concept"
             className="relative w-full h-auto object-cover rounded-[2.5rem] hover:scale-[1.02] transition-transform duration-500"
           />
