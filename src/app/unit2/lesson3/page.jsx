@@ -23,7 +23,7 @@ export default function LessonFields() {
             className="group relative flex gap-6 bg-white/70 dark:bg-slate-800/60 backdrop-blur-xl p-6 rounded-3xl shadow-md hover:shadow-xl border border-white/30 dark:border-slate-700 items-center transition-all duration-300 hover:-translate-y-1 overflow-hidden"
           >
 
-            {/* ✨ Glow خفيف */}
+            {/* ✨ Glow */}
             <div className="absolute inset-0 bg-linear-to-tr from-indigo-500/10 via-purple-500/5 to-blue-500/10 opacity-0 group-hover:opacity-100 transition"></div>
 
             {/* 🖼️ الصورة */}
@@ -58,12 +58,30 @@ export default function LessonFields() {
           🎉 تهانينا! لقد أتممت دراسة أساسيات الذكاء الاصطناعي
         </p>
 
-        <a 
-          href="/units" 
-          className="inline-flex items-center px-10 py-4 rounded-full bg-linear-to-r from-indigo-500 to-purple-500 text-white font-bold shadow-lg hover:shadow-xl hover:scale-105 transition"
-        >
-          العودة للفهرس الرئيسي
-        </a>
+        {/* 🔥 الأزرار */}
+        <div className="flex flex-col md:flex-row gap-6 justify-center items-center mt-6">
+
+          {/* 🎥 زرار الفيديو */}
+          <a 
+            href="/lesson-video"
+            className="relative px-10 py-4 font-bold text-white rounded-full overflow-hidden group"
+          >
+            <span className="absolute inset-0 bg-linear-to-r from-pink-500 via-purple-500 to-indigo-500 blur-sm opacity-80 group-hover:scale-110 transition duration-500"></span>
+
+            <span className="relative z-10 flex items-center gap-2">
+              🎥 مشاهدة شرح الدرس
+            </span>
+          </a>
+
+          {/* 🔙 الرجوع */}
+          <a 
+            href="/units" 
+            className="inline-flex items-center px-10 py-4 rounded-full bg-linear-to-r from-indigo-500 to-purple-500 text-white font-bold shadow-lg hover:shadow-xl hover:scale-105 transition"
+          >
+            العودة للفهرس الرئيسي
+          </a>
+
+        </div>
 
       </div>
 
