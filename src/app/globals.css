@@ -3,9 +3,9 @@
 :root {
   --bg-main: #ffffff;
   --mesh-gradient: 
-    radial-gradient(circle at 10% 20%, #dbeafe 0%, transparent 40%),
-    radial-gradient(circle at 90% 10%, #f5d0fe 0%, transparent 40%),
-    radial-gradient(circle at 50% 100%, #e0f2fe 0%, transparent 50%);
+  radial-gradient(circle at 15% 25%, rgba(99, 102, 241, 0.35) 0%, transparent 50%),
+  radial-gradient(circle at 85% 15%, rgba(236, 72, 153, 0.35) 0%, transparent 50%),
+  radial-gradient(circle at 50% 100%, rgba(56, 189, 248, 0.35) 0%, transparent 60%);
     
   --text-primary: #0f172a;
   --primary: #6366f1;
@@ -27,6 +27,8 @@ body {
   background-color: var(--bg-main);
   background-image: var(--mesh-gradient);
   background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: var(--text-primary);
   min-height: 100vh;
   margin: 0;
