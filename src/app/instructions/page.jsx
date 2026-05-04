@@ -38,9 +38,12 @@ export default function InstructionsPage() {
     <div className="max-w-6xl mx-auto pt-20 pb-16 px-6 text-right">
 
       {/* العنوان بدون إيموجي */}
-      <h1 className="text-4xl md:text-5xl font-black text-center mb-14 text-slate-800 dark:text-white">
-        كيفية استخدام المنصة
-      </h1>
+      <h1
+  className="text-4xl md:text-5xl font-black text-center mb-14"
+  style={{ color: "var(--text-primary)" }}
+>
+  كيفية استخدام المنصة
+</h1>
 
       {/* الكروت */}
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

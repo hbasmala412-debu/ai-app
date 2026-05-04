@@ -101,11 +101,19 @@ export default function ActivityPage() {
                   className="w-full h-full object-cover rounded-2xl"
                 />
               ) : (
-                <span className="text-gray-400 text-sm">اسحب هنا</span>
+                <span
+  className="text-sm"
+  style={{ color: "var(--text-primary)", opacity: 0.5 }}
+>
+  اسحب هنا
+</span>
               )}
             </div>
 
-            <p className="mt-4 font-bold text-sm md:text-base text-slate-700 dark:text-slate-300">
+            <p
+  className="mt-4 font-bold text-sm md:text-base"
+  style={{ color: "var(--text-primary)", opacity: 0.9 }}
+>
               {label}
             </p>
           </div>

@@ -25,13 +25,19 @@ export default function Unit1Page() {
 
       {/* 🔵 الهيدر */}
       <div className="mb-16">
-        <h1 className="text-4xl md:text-5xl font-extrabold mb-6 border-r-8 border-indigo-500 pr-4 text-slate-800 dark:text-white">
-          الوحدة الأولى: مقدمة عن الذكاء الاصطناعي
-        </h1>
+        <h1
+  className="text-4xl md:text-5xl font-extrabold mb-6 border-r-8 border-indigo-500 pr-4"
+  style={{ color: "var(--text-primary)" }}
+>
+  الوحدة الأولى: مقدمة عن الذكاء الاصطناعي
+</h1>
 
-        <p className="text-xl text-slate-600 dark:text-slate-400 leading-relaxed">
-          تعرف على أساسيات الذكاء الاصطناعي ومفاهيمه وتأثيره في حياتنا.
-        </p>
+        <p
+  className="text-xl leading-relaxed"
+  style={{ color: "var(--text-primary)", opacity: 0.8 }}
+>
+  تعرف على أساسيات الذكاء الاصطناعي ومفاهيمه وتأثيره في حياتنا.
+</p>
       </div>
 
       {/* 🟣 قائمة الدروس */}

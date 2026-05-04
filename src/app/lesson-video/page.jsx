@@ -8,7 +8,10 @@ export default function LessonVideo() {
       </h1>
 
       {/* ✏️ وصف بسيط */}
-      <p className="text-lg md:text-xl text-slate-600 dark:text-slate-300 text-center mb-10 max-w-2xl leading-relaxed">
+      <p
+  className="text-lg md:text-xl text-center mb-10 max-w-2xl leading-relaxed"
+  style={{ color: "var(--text-primary)", opacity: 0.85 }}
+>
         هذا الفيديو يقدم شرح مبسط لمجالات الذكاء الاصطناعي لمساعدتك على الفهم بشكل أفضل 👇
       </p>
 

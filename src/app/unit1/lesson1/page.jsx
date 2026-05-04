@@ -33,11 +33,14 @@ export default function LessonOne() {
               بطريقة تشبه الإنسان.
             </p>
 
-            <div className="mt-8 p-6 bg-indigo-50/80 dark:bg-slate-900/80 rounded-2xl italic text-lg border border-indigo-100 dark:border-slate-700">
-              بمعنى آخر، هو محاولة لجعل الكمبيوتر أو الآلة "ذكية"، بحيث لا تنفذ الأوامر فقط، بل تفهم المعلومات وتستخدمها لاتخاذ قرارات.
+            {/* ✨ البوكس المعدل */}
+            <div className="mt-8 p-6 rounded-3xl backdrop-blur-xl border border-white/20 dark:border-slate-700 shadow-lg bg-white/60 dark:bg-slate-800/60">
+              <p className="text-lg md:text-xl leading-relaxed text-slate-700 dark:text-slate-200 italic">
+                بمعنى آخر، هو محاولة لجعل الكمبيوتر أو الآلة "ذكية"، بحيث لا تنفذ الأوامر فقط، بل تفهم المعلومات وتستخدمها لاتخاذ قرارات.
+              </p>
             </div>
-          </div>
 
+          </div>
         </div>
 
         {/* 🔵 القسم الثاني */}

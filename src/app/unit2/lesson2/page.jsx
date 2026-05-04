@@ -52,10 +52,10 @@ export default function LessonApps() {
         {apps.map((app, i) => (
           <div 
             key={i} 
-            className="group bg-white/70 dark:bg-slate-800/60 backdrop-blur-xl rounded-3xl shadow-md hover:shadow-xl overflow-hidden border border-white/30 dark:border-slate-700 transition-all duration-300 hover:-translate-y-1"
+            className="group flex flex-col justify-between h-full bg-white/70 dark:bg-slate-800/60 backdrop-blur-xl rounded-3xl shadow-md hover:shadow-xl overflow-hidden border border-white/30 dark:border-slate-700 transition-all duration-300 hover:-translate-y-1"
           >
 
-            {/* 🖼️ الصورة (أصغر + متناسقة) */}
+            {/* 🖼️ الصورة */}
             <div className="w-full h-44 overflow-hidden">
               <img 
                 src={app.img} 
@@ -65,18 +65,22 @@ export default function LessonApps() {
             </div>
 
             {/* 📝 المحتوى */}
-            <div className="p-6">
+            <div className="p-6 flex flex-col grow">
 
               <h3 className="text-xl font-bold mb-3 text-indigo-500">
                 {app.t}
               </h3>
 
-              <p className="text-sm text-slate-600 dark:text-slate-300 mb-4 leading-relaxed">
+              <p className="text-sm text-slate-600 dark:text-slate-300 mb-4 leading-relaxed grow">
                 {app.d}
               </p>
 
-              {/* 💡 معلومة مخصصة */}
-              <div className="p-3 bg-indigo-50/80 dark:bg-slate-900/80 rounded-xl text-xs border border-indigo-100 dark:border-slate-700">
+              {/* 💡 المربع الصغير (FIX النهائي) */}
+              <div className="
+                mt-auto p-4 rounded-xl text-sm backdrop-blur-md transition
+                bg-indigo-50/80 text-slate-700 border border-indigo-100
+                dark:bg-slate-900/70 dark:text-slate-200 dark:border-slate-700
+              ">
                 {app.info}
               </div>
 
